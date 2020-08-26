@@ -1,20 +1,25 @@
 import express from "express";
 
+import AuthenticationController from "./controllers/AuthenticationController";
 import ClassesController from "./controllers/ClassesController";
 import ConnectionsController from "./controllers/ConnectionsController";
-import UsersController from "./controllers/UsersController";
 
 const routes = express.Router();
+
+const authenticationController = new AuthenticationController();
 const classesController = new ClassesController();
 const connectionsController = new ConnectionsController();
-const usersController = new UsersController();
 
-routes.get("/classes", classesController.index);
+routes.use(authenticationController.authentication);
+
+routes.post("/register", authenticationController.register);
+routes.get("/login", authenticationController.login);
+routes.get("/me", authenticationController.me);
+
 routes.post("/classes", classesController.create);
+routes.get("/classes", classesController.index);
 
-routes.get("/connections", connectionsController.index);
 routes.post("/connections", connectionsController.create);
-
-routes.post("/users", usersController.create);
+routes.get("/connections", connectionsController.index);
 
 export default routes;
