@@ -1,13 +1,13 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 
+import { logoImage, landingImage } from "../../assets/images";
+
 import {
-  LogoImage,
-  LandingImage,
-  StudyIcon,
-  GiveClassesIcon,
-  PurpleHeartIcon,
-} from "../../assets/images";
+  studyIcon,
+  giveClassesIcon,
+  purpleHeartIcon,
+} from "../../assets/images/icons";
 
 import api from "../../services/api";
 
@@ -27,30 +27,30 @@ function Landing() {
     <div id="page-landing">
       <div id="page-landing-content" className="container">
         <div className="logo-container">
-          <img src={LogoImage} alt="Proffy" />
+          <img src={logoImage} alt="Proffy" />
           <h2>Sua plataforma de estudos online.</h2>
         </div>
 
         <img
-          src={LandingImage}
+          src={landingImage}
           alt="Plataforma de estudos"
           className="hero-image"
         />
 
         <div className="buttons-container">
           <Link to="/study" className="study">
-            <img src={StudyIcon} alt="Estudar" />
+            <img src={studyIcon} alt="Estudar" />
             Estudar
           </Link>
           <Link to="/give-classes" className="give-classes">
-            <img src={GiveClassesIcon} alt="Dar aulas" />
+            <img src={giveClassesIcon} alt="Dar aulas" />
             Dar aulas
           </Link>
         </div>
 
         <span className="total-connections">
           Total de {totalConnections} conexões já realizadas{" "}
-          <img src={PurpleHeartIcon} alt="Coração roxo" />
+          <img src={purpleHeartIcon} alt="Coração roxo" />
         </span>
       </div>
     </div>

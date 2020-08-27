@@ -1,0 +1,9 @@
+export { default as backIcon } from "./icons/back.svg";
+export { default as giveClassesIcon } from "./icons/give-classes.svg";
+export { default as purpleHeartIcon } from "./icons/purple-heart.svg";
+export { default as rocketIcon } from "./icons/rocket.svg";
+export { default as smileIcon } from "./icons/smile.svg";
+export { default as studyIcon } from "./icons/study.svg";
+export { default as successCheckIcon } from "./icons/success-check-icon.svg";
+export { default as warningIcon } from "./icons/warning.svg";
+export { default as whatsappIcon } from "./icons/whatsapp.svg";

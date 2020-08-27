@@ -1,12 +1,3 @@
-export { default as LogoImage } from "./images/logo.svg";
-export { default as LandingImage } from "./images/landing.svg";
-export { default as SuccessBackgroundImage } from "./images/success-background.svg";
-export { default as BackIcon } from "./images/icons/back.svg";
-export { default as GiveClassesIcon } from "./images/icons/give-classes.svg";
-export { default as PurpleHeartIcon } from "./images/icons/purple-heart.svg";
-export { default as RocketIcon } from "./images/icons/rocket.svg";
-export { default as SmileIcon } from "./images/icons/smile.svg";
-export { default as StudyIcon } from "./images/icons/study.svg";
-export { default as SuccessCheckIcon } from "./images/icons/success-check-icon.svg";
-export { default as WarningIcon } from "./images/icons/warning.svg";
-export { default as WhatsappIcon } from "./images/icons/whatsapp.svg";
+export { default as logoImage } from "./images/logo.svg";
+export { default as landingImage } from "./images/landing.svg";
+export { default as successBackgroundImage } from "./images/success-background.svg";

@@ -1,6 +1,6 @@
 import React from "react";
 
-import { WhatsappIcon } from "../../assets/images";
+import { whatsappIcon } from "../../assets/images/icons";
 
 import api from "../../services/api";
 
@@ -49,7 +49,7 @@ const TeacherItem: React.FC<TeacherItemProps> = ({ teacher }) => {
           href={`https://wa.me/${teacher.whatsapp}`}
           target="_blank"
         >
-          <img src={WhatsappIcon} alt="Whatsapp" />
+          <img src={whatsappIcon} alt="Whatsapp" />
           Entrar em contato
         </a>
       </footer>

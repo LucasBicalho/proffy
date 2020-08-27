@@ -1,7 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-import { LogoImage, BackIcon } from "../../assets/images";
+import { logoImage } from "../../assets/images";
+import { backIcon } from "../../assets/images/icons";
 
 import "./styles.css";
 
@@ -19,9 +20,9 @@ const PageHeader: React.FC<PageHeaderProps> = ({
     <header className="page-header">
       <div className="top-bar-container">
         <Link to="/">
-          <img src={BackIcon} alt="Voltar" />
+          <img src={backIcon} alt="Voltar" />
         </Link>
-        <img src={LogoImage} alt="Proffy" />
+        <img src={logoImage} alt="Proffy" />
       </div>
 
       <div className="header-content">

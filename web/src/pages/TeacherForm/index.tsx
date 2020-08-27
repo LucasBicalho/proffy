@@ -6,7 +6,7 @@ import Input from "../../components/Input";
 import Textarea from "../../components/Textarea";
 import Select from "../../components/Select";
 
-import { WarningIcon } from "../../assets/images";
+import { warningIcon } from "../../assets/images/icons";
 
 import api from "../../services/api";
 
@@ -194,7 +194,7 @@ function TeacherForm() {
 
           <footer>
             <p>
-              <img src={WarningIcon} alt="Aviso importante" />
+              <img src={warningIcon} alt="Aviso importante" />
               Importante <br />
               Preencha todos os dados
             </p>
